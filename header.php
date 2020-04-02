@@ -60,7 +60,7 @@ include_once('php/conexion.php');
     <!-- menu -->
     <div class="row">
         <div class="col-3 col-sm-4 col-md-5 col-lg-12 col-xl-12">
-           <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: khaki;">
+           <nav class="navbar navbar-expand navbar-dark fixed-top" style="background-color: khaki;">
                 <a href="#" class="navbar-brand"><img src="imagen/iconos/logoo.png" style="width: 45px;"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#idUnoMenu">
                     <span class="navbar-toggler-icon"></span>
@@ -75,9 +75,8 @@ include_once('php/conexion.php');
                             
                     </ul>
                 </div>
-                <form action="#" method="post" class="form-inline">
-                    <a href="logout.php" class="btn btn-secondary btn-SM" role="button" aria-pressed="true">Salir</a>
-                    </p>
+                <form action="#" method="post" class="form-inline ">
+                    <a href="logout.php" class="btn btn-secondary btn-SM" role="button" aria-pressed="true">Salir</a>                    
                 </form>         
             </nav>  
         </div>
@@ -85,7 +84,15 @@ include_once('php/conexion.php');
         <br>
         <br>
         <br>
-	
+	<div class="row">
+     <div class="col d-block d-sm-block d-md-none">
+        <form action="#" method="post" class="form-inline ">
+            <a href="logout.php" class="btn btn-secondary btn-SM" role="button" aria-pressed="true">Salir</a>
+            
+        </form> 
+     </div>   
+    </div>
+    
     <!-- ACCESS DATA -->
     <div class="row">
         <div class="col">

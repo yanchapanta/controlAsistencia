@@ -39,18 +39,21 @@ if(!isset($_POST['create_pdf'])){
 	$pdf->SetFont('Helvetica', '', 10);
 	$pdf->addPage();
 
-	$content = '		   
-		<img src="imagen/img_pdf/logo_istvn.png" alt="logo" width="50" height="50" style="float: left;"> 
-		<span style="font-size: 67px;">
-		&nbsp;&nbsp;
-		INSTITUTO TECNOLÓGICO 
-		&nbsp;&nbsp;&nbsp;                     
-		<img src="imagen/img_pdf/logo_istvn.png" alt="logo" width="50" height="50" style="float: right;">      
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		SUPERIOR  VIDA NUEVA  
-    		</span>	
-		<br>
-		<br>
+	$content = '
+		<div style="display: flex; align-items: center;" >
+			<div style=" display:block; padding: 10px; " width="500"> 
+				 
+			</div>
+		    <div style="display:block; padding: 10px; text-align:center;" width="500"> 
+				<span style="font-size: 25px; ">			
+					INSTITUTO TECNOLÓGICO VIDA NUEVA    		 
+		    	</span>
+			</div>
+			
+			<br>
+			<br>
+		</div>	   
+		
 			 Quito, '.$variable1.' 
 			 	
 	';
@@ -95,7 +98,7 @@ if(!isset($_POST['create_pdf'])){
 		<div class="row padding">
         	<div class="col-md-12" style="text-align:center;">
 				<span>Creador del sistema  </span>
-				<a href="invitado_asistencias.php" style="">http://sistemaasis.elmejorhosting.online</a> por Franklin Pallasco.
+				<a href="invitado_asistencias.php" style="">miweb.com</a> por Marco Yanchapanta.
             </div>
         </div>
     	
