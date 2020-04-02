@@ -1,0 +1,68 @@
+<?php
+    include_once('header.php');
+?>
+
+    <!-- ACCESS DATA -->
+    <div class="row">
+        <div class="col">
+            <!----Customer data and access level-->
+                <b class="text-end text-primary" id="welcome">
+                Bienvenido : 
+                    <i>
+                    <?php
+                    echo $_SESSION['usuario'];
+                    echo "<br>";
+                    echo "Nivel: ".$_SESSION['clave'];
+                    
+                    ?> 
+
+                    </i>
+                </b>
+        </div>        
+    </div>
+    <!-- fecha actual -->
+    <div class="row">
+        <div class="col"> 
+            <p class="display-4 text-center" >  
+            <script>
+                $(function () {
+                    $.datepicker.setDefaults($.datepicker.regional["es"]);
+                    $("#datepicker").datepicker({
+                        dateFormat: 'dd/mm/yy',
+                        firstDay: 1
+                    }).datepicker("setDate", new Date());
+                });
+            </script> 
+
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.css" rel="stylesheet"/>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.js"></script>
+
+            <!--fechas-->
+                <label for="datepicker"> Quito, </label>
+                <a> 
+                    <script >
+                        var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+                        var f=new Date();
+                        document.write(f.getDate() + " de " + meses[f.getMonth()] + " del " + f.getFullYear());
+                    </script>
+                </a>                
+        </p>
+        </div>
+    </div>
+    <!-- main primary -->
+    <div class="row">
+        <div class="col">
+        <p style="font-size:40px;font-family: 'Times New Roman', Times, serif"> <b>Asistencia por Asignatura</b>
+        </p>
+        </div>
+    </div>
+
+
+
+
+
+
+<?php
+    include_once('footer.php');
+?>
