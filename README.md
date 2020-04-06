@@ -1,6 +1,6 @@
 ###  [CONTROL DE ASISTENCIA](https://www.behance.net/marcoyanchap)
 **Descripción del proyecto**
-El proyecto web control de asistencia esta realizado con lenguajes de programación tales como :
+El proyecto web, control de asistencia esta realizado con lenguajes de programación tales como :
 - Php
 - Css
 - html
