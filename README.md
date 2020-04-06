@@ -6,6 +6,7 @@ El proyecto web control de asistencia esta realizado con lenguajes de programaci
 - html
 - Tcpdf
 - Bootstrap
+
 Sus funcionalidad es controlar a asistencia de una institución en tiempo real, y a la vez imprimir un informe del mismo. Para ingresar al sistema primero tiene que pasar por una validación de login el cual decide  si eres administrado o usuario
 
 ### LOGO  Para mas imágenes haga clic [aquí](https://www.behance.net/gallery/94744469/Sistema-de-Control-de-Asistencia)
